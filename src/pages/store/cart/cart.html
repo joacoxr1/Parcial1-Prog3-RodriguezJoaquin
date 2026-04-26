@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito - Food Store</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <header>
+        <h1>Food Store</h1>
+        <nav>
+            <ul>
+                <li><a href="../home/home.html">Volver al Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content" style="max-width: 800px; margin: 0 auto;">
+        <div class="search-container">
+            <h2>Tu Pedido</h2>
+            <div id="lista-carrito">
+                </div>
+            <hr>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                <h3>Total: $<span id="total-precio">0</span></h3>
+                <div>
+                    <button id="vaciar-carrito" style="background-color: #888; margin-right: 10px;">Vaciar Todo</button>
+                    <button id="finalizar-compra" style="background-color: #27ae60;">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./cart.ts"></script>
+</body>
+</html>
